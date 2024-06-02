@@ -51,6 +51,7 @@ function renderTaskList() {
     $('.task-card').draggable({
         revert: "invalid",
         helper: "clone",
+        zIndex: 1000,
         start: function () {
             $(this).css('visibility', 'hidden');
         },
@@ -58,6 +59,7 @@ function renderTaskList() {
             $(this).css('visibility', 'visible');
         }
     });
+    
 }
 
 // Todo: create a function to handle adding a new task
