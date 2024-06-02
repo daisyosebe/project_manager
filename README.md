@@ -4,19 +4,19 @@
 # Project Manager
 ## Description
 ```
-When task board is opened, 
+When the task board is opened, 
 
-you're presented with columns labeled to do, in-progress, and done. 
+you're presented with columns labeled to do, in progress, and done. 
 
-When you click add task youre able to enter a title due date and description of the task. 
+When you click 'add task' you're able to enter a title, due date, and description of the task. 
 
-Task is then saved to local storage and rendered in the To do column.
+The task is then saved to local storage and rendered in the To Do column.
 
-The task cards are also color coded yellow for nearing due date or red for overdue.  
+The task cards are also color-coded yellow for nearing the due date or red for overdue.  
 
-Youre able to drag the task cards between to-do, in progress, and done. 
+You are able to drag the task cards between to-do, in progress, and done. 
 
-When delete button is clicked for the task, 
+When the delete button is clicked for the task, 
 
 the task is removed from the page. 
 
@@ -31,7 +31,7 @@ the task is removed from the page.
 
 
 ## GitHub Repo/Videos
-GitHub Repo: (https://github.com/daisyosebe/task_tracker.git)
+GitHub Repo: (https://github.com/daisyosebe/project_manager.git)
 
 VIDEO: 
 
