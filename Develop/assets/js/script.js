@@ -24,7 +24,40 @@ return taskCard;
 
 // Todo: create a function to render the task list and make cards draggable
 function renderTaskList() {
+    $('#todo-cards').empty();
+    $('#in-progress-cards').empty();
+    $('#done-cards').empty();
 
+    taskList.forEach(task => {
+        const taskCard = createTaskCard(task);
+        if (task.status === 'to-do') {
+            $('#todo-cards').append(taskCard);
+        } else if (task.status === 'in-progress') {
+            $('#in-progress-cards').append(taskCard);
+        } else if (task.status === 'done') {
+            $('#done-cards').append(taskCard);
+        }
+
+        // Color code tasks based on due date
+        const now = dayjs();
+        const dueDate = dayjs(task.dueDate);
+        if (dueDate.isBefore(now, 'day')) {
+            taskCard.addClass('bg-danger text-white'); // Overdue
+        } else if (dueDate.isSame(now, 'day') || dueDate.isBefore(now.add(2, 'day'), 'day')) {
+            taskCard.addClass('bg-warning'); // Nearing deadline
+        }
+    });
+
+    $('.task-card').draggable({
+        revert: "invalid",
+        helper: "clone",
+        start: function () {
+            $(this).css('visibility', 'hidden');
+        },
+        stop: function () {
+            $(this).css('visibility', 'visible');
+        }
+    });
 }
 
 // Todo: create a function to handle adding a new task
