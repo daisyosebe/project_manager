@@ -10,7 +10,7 @@ you're presented with columns labeled to do, in progress, and done.
 
 When you click 'add task' you're able to enter a title, due date, and description of the task. 
 
-The task is then saved to local storage and rendered in the To Do column.
+The task is then saved to local storage and rendered in the To-Do column.
 
 The task cards are also color-coded yellow for nearing the due date or red for overdue.  
 
@@ -30,10 +30,10 @@ the task is removed from the page.
 >
 
 
-## GitHub Repo,deployed link,screenshot
+## GitHub Repo, deployed link, screenshot
 GitHub Repo: (https://github.com/daisyosebe/project_manager.git)
 
-deployed link: 
+Deployed link: (https://daisyosebe.github.io/project_manager/)
 
 
 ![Screenshot 2024-06-02 070554](https://github.com/daisyosebe/project_manager/assets/145105156/49df41c7-4503-4b7a-976e-8988712c046c)
